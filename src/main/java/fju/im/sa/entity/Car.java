@@ -1,5 +1,6 @@
 package fju.im.sa.entity;
 
+
 public class Car {
 
 	private int Car_ID;
