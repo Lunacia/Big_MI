@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fju.im</groupId>
 	<artifactId>sa</artifactId>
-	<name>SA</name>
+	<name>Big_MI</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
