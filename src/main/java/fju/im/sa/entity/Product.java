@@ -1,0 +1,118 @@
+package fju.im.sa.entity;
+public class Product {
+
+	private int Product_ID;
+
+	private String Proudct_Name;
+
+	private int Product_Price;
+
+	private int Product_Stock;
+
+	private String Product_Intro;
+
+	private String Product_Date;
+
+	private boolean Product_exist;
+
+	private String Product_Pic;
+
+	private String Product_Category;
+
+	private Car[] car;
+
+	public Product(int product_ID, String proudct_Name, int product_Price, int product_Stock, String product_Intro,
+			String product_Date, boolean product_exist, String product_Pic, String product_Category, Car[] car) {
+		super();
+		Product_ID = product_ID;
+		Proudct_Name = proudct_Name;
+		Product_Price = product_Price;
+		Product_Stock = product_Stock;
+		Product_Intro = product_Intro;
+		Product_Date = product_Date;
+		Product_exist = product_exist;
+		Product_Pic = product_Pic;
+		Product_Category = product_Category;
+		this.car = car;
+	}
+
+	public String getProudct_Name() {
+		return Proudct_Name;
+	}
+
+	public void setProudct_Name(String proudct_Name) {
+		Proudct_Name = proudct_Name;
+	}
+
+	public int getProduct_Price() {
+		return Product_Price;
+	}
+
+	public void setProduct_Price(int product_Price) {
+		Product_Price = product_Price;
+	}
+
+	public int getProduct_Stock() {
+		return Product_Stock;
+	}
+
+	public void setProduct_Stock(int product_Stock) {
+		Product_Stock = product_Stock;
+	}
+
+	public String getProduct_Intro() {
+		return Product_Intro;
+	}
+
+	public void setProduct_Intro(String product_Intro) {
+		Product_Intro = product_Intro;
+	}
+
+	public String getProduct_Date() {
+		return Product_Date;
+	}
+
+	public void setProduct_Date(String product_Date) {
+		Product_Date = product_Date;
+	}
+
+	public boolean isProduct_exist() {
+		return Product_exist;
+	}
+
+	public void setProduct_exist(boolean product_exist) {
+		Product_exist = product_exist;
+	}
+
+	public String getProduct_Pic() {
+		return Product_Pic;
+	}
+
+	public void setProduct_Pic(String product_Pic) {
+		Product_Pic = product_Pic;
+	}
+
+	public String getProduct_Category() {
+		return Product_Category;
+	}
+
+	public void setProduct_Category(String product_Category) {
+		Product_Category = product_Category;
+	}
+
+	public Car[] getCar() {
+		return car;
+	}
+
+	public void setCar(Car[] car) {
+		this.car = car;
+	}
+
+	public int getProduct_ID() {
+		return Product_ID;
+	}
+
+	
+	
+
+}
