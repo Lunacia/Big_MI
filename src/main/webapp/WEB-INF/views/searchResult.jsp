@@ -73,7 +73,7 @@ body, html {
         </div>
       </div>
       <div class="w3-container">
-        <form class="form-horizontal" method="post">
+        <form class="form-horizontal" method="post" action="searchResult.jsp">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label"> 關鍵字：</label>
     <div class="col-sm-10">
@@ -106,11 +106,27 @@ body, html {
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="searchResult.jsp" class="btn btn-default" role="button" type="submit">送出</a>
+      <button type="submit" class="btn btn-default">送出</button>
       <button type="reset" class="btn btn-primary">清除</button>
     </div>
   </div>
 </form>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <li>
       <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -138,7 +154,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_5terre.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>5 Terre</h2>
       </div>
@@ -147,7 +163,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_monterosso.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Monterosso</h2>
       </div>
@@ -156,7 +172,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_vernazza.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Vernazza</h2>
       </div>
@@ -167,7 +183,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_manarola.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Manarola</h2>
       </div>
@@ -176,7 +192,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_corniglia.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Corniglia</h2>
       </div>
@@ -185,7 +201,7 @@ body, html {
 
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="img_riomaggiore.jpg" style="width:100%">
+      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Riomaggiore</h2>
       </div>
@@ -196,7 +212,7 @@ body, html {
 <div class="w3-row-padding w3-margin-top">    
   <div class="w3-third">
     <div class="w3-card-2">
-      <img src="/SA/img/iphone-7.png" style="width:100%">
+        <a href="product.jsp"><img src="/SA/img/iphone-7.png" style="width:100%"></a>
       <div class="w3-container w3-margin-bottom">
         <h2>Iphone7</h2>
         <p></p>

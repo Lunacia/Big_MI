@@ -73,7 +73,7 @@ body, html {
         </div>
       </div>
       <div class="w3-container">
-        <form class="form-horizontal" method="post">
+        <form class="form-horizontal" method="post" action="searchResult.jsp">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label"> 關鍵字：</label>
     <div class="col-sm-10">
@@ -106,7 +106,7 @@ body, html {
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="searchResult.jsp" class="btn btn-default" role="button" type="submit">送出</a>
+      <button type="submit" class="btn btn-default">送出</button>
       <button type="reset" class="btn btn-primary">清除</button>
     </div>
   </div>
@@ -153,7 +153,7 @@ window.onclick = function(event) {
   </div>
   <div class="w3-display-left w3-text-white" style="margin-top:8%;margin-left:55%;">
     <span class="w3-jumbo w3-hide-small w3-animate-opacity w3-text-black w3-margin-bottom">You must to own 7。</span><br>
-    <p><a href="#about" class="w3-btn w3-black w3-padding-large w3-xlarge w3-margin-top w3-hover-opacity-off w3-text-white w3-animate-opacity">知道更多</a></p>
+    <p><a href="product.jsp" class="w3-btn w3-black w3-padding-large w3-xlarge w3-margin-top w3-hover-opacity-off w3-text-white w3-animate-opacity">知道更多</a></p>
   </div>
 
 <script>

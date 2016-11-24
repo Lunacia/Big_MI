@@ -76,7 +76,7 @@ td {
         </div>
       </div>
       <div class="w3-container">
-        <form class="form-horizontal" method="post">
+        <form class="form-horizontal" method="post" action="searchResault.jsp">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label"> 關鍵字：</label>
     <div class="col-sm-10">
@@ -109,7 +109,7 @@ td {
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="searchResult.jsp" class="btn btn-default" role="button" type="submit">送出</a>
+      <button type="submit" class="btn btn-default">送出</button>
       <button type="reset" class="btn btn-primary">清除</button>
     </div>
   </div>
@@ -192,7 +192,7 @@ window.onclick = function(event) {
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary" style="margin-left:27%">去結帳</button>
-      <button type="submit" class="btn btn-default">取消購買</a>
+      <button type="button" class="btn btn-default">取消購買</a>
     </div>
   </div>
 </form>

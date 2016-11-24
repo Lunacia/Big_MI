@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
-<title>神腦國際-產品</title>
+<title>神腦國際</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -23,6 +23,9 @@ body, html {
     width: 150px;
     height: 86px;
     float: left;
+}
+td {
+    text-align: left;
 }
 </style>
 <body>
@@ -60,7 +63,7 @@ body, html {
                 <a href="productList.jsp?B=Other">其他品牌</a>
             </div>
     </li>
-    <li class="w3-right w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><a href="#about"><i class="fa fa-search"></i> 搜尋</a></li>
+      <li class="w3-right w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><a href="#about"><i class="fa fa-search"></i> 搜尋</a></li>
       <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-8">
       <header class="w3-container w3-teal">
@@ -146,83 +149,10 @@ window.onclick = function(event) {
   <a href="#contact" onclick="w3_close()">登入</a>
   <a href="#contact" onclick="w3_close()">搜尋</a>
 </nav>
-
-
-  <ol class="breadcrumb w3-light-grey">
-      <li><a href="index.jsp">首頁</a></li>
-      <li class="active"><%=request.getParameter("B")%></li>
-  </ol>
-
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card-2">
-        <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>5 Terre</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Monterosso</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Vernazza</h2>
-      </div>
-    </div>
-  </div>
+    <!-- Header with full-height image -->
+<div class="w3-display-topmiddle w3-container w3-padding-4 w3-center w3-xxlarge" style="width:50%;margin-top:8%">   更改成功～行了吧～爽了吧！！！
 </div>
 
-<div class="w3-row-padding w3-margin-top">
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Manarola</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Corniglia</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-third">
-    <div class="w3-card-2">
-      <a href="product.jsp"><img src="img_5terre.jpg" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Riomaggiore</h2>
-      </div>
-    </div>
-  </div>
-  </div>
-    
-<div class="w3-row-padding w3-margin-top">    
-  <div class="w3-third">
-    <div class="w3-card-2">
-        <a href="product.jsp"><img src="/SA/img/iphone-7.png" style="width:100%"></a>
-      <div class="w3-container w3-margin-bottom">
-        <h2>Iphone7</h2>
-        <p></p>
-      </div>
-    </div>
-  </div>
-    
-</div>
 
 
 <script>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
-<title>神腦國際-成功</title>
+<title>神腦國際</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -76,7 +76,7 @@ td {
         </div>
       </div>
       <div class="w3-container">
-        <form class="form-horizontal" method="post">
+        <form class="form-horizontal" method="post" action="searchResult.jsp">
     <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label"> 關鍵字：</label>
     <div class="col-sm-10">
@@ -109,7 +109,7 @@ td {
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <a href="searchResult.jsp" class="btn btn-default" role="button" type="submit">送出</a>
+      <button type="submit" class="btn btn-default">送出</button>
       <button type="reset" class="btn btn-primary">清除</button>
     </div>
   </div>
@@ -152,8 +152,7 @@ window.onclick = function(event) {
     <!-- Header with full-height image -->
 <div class="w3-display-topmiddle w3-container w3-padding-4 w3-center w3-xxlarge" style="width:50%;margin-top:8%"> 你成功下單了～行了吧～爽了吧！！！
 </div>
-<div class="w3-display-topmiddle w3-container w3-padding-4 w3-center w3-xxlarge" style="width:50%"><p class="w3-animate-zoom" style="font-size:500px">幹</p>
-</div>
+
 
 
 <script>
