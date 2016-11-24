@@ -261,7 +261,9 @@ window.onclick = function(event) {
                 <input type="radio" name="color" id="inlineRadio2" value="gold"> 金色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="silver"> 銀色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="black"> 黑色<br>
-                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>    
+                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>
+            <p></p>
+                <input type="number" name="amount" id="inlineRadio3" min="1" value="1">
             <p></p>
                 <input type="hidden" name="productName" id="inlineRadio3" value="111111">
                 <input type="hidden" name="productCat" id="inlineRadio3" value="Iphone">
