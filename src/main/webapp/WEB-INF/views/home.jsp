@@ -6,15 +6,7 @@
 </head>
 <body>
 <h1>
-<<<<<<< Updated upstream
-	Hello world!
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-=======
-	Hello world!  gg
->>>>>>> Stashed changes
+	Hello world!  
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
