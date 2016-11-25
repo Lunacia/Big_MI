@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -211,7 +211,9 @@ window.onclick = function(event) {
                 <input type="radio" name="color" id="inlineRadio2" value="gold"> 金色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="silver"> 銀色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="black"> 黑色<br>
-                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>    
+                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>
+            <p></p>
+                <input type="number" name="amount" id="inlineRadio3" min="1" value="1">
             <p></p>
                 <input type="hidden" name="productName" id="inlineRadio3" value="111111">
                 <input type="hidden" name="productCat" id="inlineRadio3" value="Iphone">
@@ -236,7 +238,9 @@ window.onclick = function(event) {
                 <input type="radio" name="color" id="inlineRadio2" value="gold"> 金色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="silver"> 銀色<br>
                 <input type="radio" name="color" id="inlineRadio3" value="black"> 黑色<br>
-                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>    
+                <input type="radio" name="color" id="inlineRadio3" value="keyblack"> 曜石黑<br>
+                <p></p>
+                <input type="number" name="amount" id="inlineRadio3" min="1" value="1">
             <p></p>
                 <input type="hidden" name="productName" id="inlineRadio3" value="111111">
                 <input type="hidden" name="productCat" id="inlineRadio3" value="Iphone">
