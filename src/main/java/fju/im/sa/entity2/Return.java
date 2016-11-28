@@ -23,7 +23,7 @@ public class Return {
 	}
 
 	public int getReturn_ID() {
-		return 0;
+		return Return_ID;
 	}
 
 	public Return(int return_ID, int member_ID, int return_Money, String return_Date, String return_Reason,

@@ -27,7 +27,7 @@ public class Product {
 	}
 
 	public int getProduct_ID() {
-		return 0;
+		return Product_ID;
 	}
 
 	public Product(int product_ID, String proudct_Name, String product_Pic, String product_Intro, String product_Date,

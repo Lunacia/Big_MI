@@ -19,7 +19,7 @@ public class Pay {
 	}
 
 	public int getPay_ID() {
-		return 0;
+		return Pay_ID;
 	}
 
 	public Pay(int pay_ID, String pay_Date, boolean pay_Check, int member_ID, int sale_ID, int manager_ID) {

@@ -27,7 +27,7 @@ public class Member {
 	}
 
 	public int getMember_ID() {
-		return 0;
+		return Member_ID;
 	}
 
 	public Member(int member_ID, String member_Name, String member_Email, String member_Address, String member_Password,

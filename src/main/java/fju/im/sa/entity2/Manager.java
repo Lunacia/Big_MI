@@ -27,7 +27,7 @@ public class Manager {
 	}
 
 	public int getManager_ID() {
-		return 0;
+		return Manager_ID;
 	}
 
 	public Manager(int manager_ID, String manager_Name, String manager_Email, String manager_Password,

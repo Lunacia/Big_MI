@@ -29,7 +29,7 @@ public class Sale {
 	}
 
 	public int getSale_ID() {
-		return 0;
+		return Sale_ID;
 	}
 
 	public Sale(int sale_ID, int sale_Check, String sale_Date, int member_ID, int cart_ID, int manager_ID,

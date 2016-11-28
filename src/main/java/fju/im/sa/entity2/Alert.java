@@ -8,8 +8,8 @@ public class Alert {
 
 	private int Ship_ID;
 
-	public void getSale_ID() {
-
+	public int getSale_ID() {
+		return Sale_ID;
 	}
 
 	public Alert(int alert_ID, int sale_ID, int ship_ID) {

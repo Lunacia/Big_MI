@@ -23,7 +23,7 @@ public class Shipment {
 	}
 
 	public int getShip_ID() {
-		return 0;
+		return Ship_ID;
 	}
 
 	public Shipment(int ship_ID, String ship_Date, boolean ship_Check, String ship_BuiltDate, String ship_DueDate,

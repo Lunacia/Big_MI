@@ -17,7 +17,7 @@ public class Cart {
 	}
 
 	public int getCart_ID() {
-		return 0;
+		return Cart_ID;
 	}
 
 	public Cart(int cart_ID, int cart_Total, int member_ID, Sale sale, Product[] product) {
