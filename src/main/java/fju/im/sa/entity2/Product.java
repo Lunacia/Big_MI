@@ -22,15 +22,15 @@ public class Product {
 
 	private Cart[] cart;
 
-	public List<Product> getProductList() {
-		return null;
-	}
-
+	
 	public int getProduct_ID() {
 		return Product_ID;
 	}
+	public void setProduct_ID(int product_ID) {
+		Product_ID = product_ID;
+	}
 
-	public Product(int product_ID, String proudct_Name, String product_Pic, String product_Intro, String product_Date,
+	/*public Product(int product_ID, String proudct_Name, String product_Pic, String product_Intro, String product_Date,
 			int product_Price, int product_Stock, boolean product_Exist, String product_Category, Cart[] cart) {
 		super();
 		Product_ID = product_ID;
@@ -43,7 +43,7 @@ public class Product {
 		Product_Exist = product_Exist;
 		Product_Category = product_Category;
 		this.cart = cart;
-	}
+	} */
 
 	public String getProudct_Name() {
 		return Proudct_Name;
