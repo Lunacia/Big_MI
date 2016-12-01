@@ -59,17 +59,10 @@
                   </tr>
                 </thead>
                 <tr>
-                  <td>111111</td>
-                  <td>Iphone 7(黑,128G)</td>
-                  <td>2016/11/12</td>
-                  <td>50</td>
-                  <td><a href="uploadProduct.jsp" class="btn btn-primary" role="button">查看</a></td>
-                </tr>
-                <tr>
-                  <td>111111</td>
-                  <td>Iphone 7(紅,128G)</td>
-                  <td>2016/11/12</td>
-                  <td>10</td>
+                  <td>${product.id}</td>
+                  <td>${product.name}</td>
+                  <td>${product.date}</td>
+                  <td>${product.inventory}</td>
                   <td><a href="uploadProduct.jsp" class="btn btn-primary" role="button">查看</a></td>
                 </tr>
                 

@@ -31,22 +31,9 @@ public class Sale {
 	public int getSale_ID() {
 		return Sale_ID;
 	}
-
-	public Sale(int sale_ID, int sale_Check, String sale_Date, int member_ID, int cart_ID, int manager_ID,
-			Return salesreturn, Shipment shipment, Pay pay, Manager manager, Alert alert) {
-		super();
-		Sale_ID = sale_ID;
-		Sale_Check = sale_Check;
-		Sale_Date = sale_Date;
-		Member_ID = member_ID;
-		Cart_ID = cart_ID;
-		Manager_ID = manager_ID;
-		this.salesreturn = salesreturn;
-		this.shipment = shipment;
-		this.pay = pay;
-		this.manager = manager;
-		this.alert = alert;
-	}
+    public void setSale_ID(int sale_ID){
+    	Sale_ID = sale_ID;
+    }
 
 	public int getSale_Check() {
 		return Sale_Check;

@@ -26,21 +26,11 @@ public class Shipment {
 		return Ship_ID;
 	}
 
-	public Shipment(int ship_ID, String ship_Date, boolean ship_Check, String ship_BuiltDate, String ship_DueDate,
-			int manager_ID, int sale_ID, Manager manager) {
-		super();
-		Ship_ID = ship_ID;
-		Ship_Date = ship_Date;
-		Ship_Check = ship_Check;
-		Ship_BuiltDate = ship_BuiltDate;
-		Ship_DueDate = ship_DueDate;
-		Manager_ID = manager_ID;
-		Sale_ID = sale_ID;
-		this.manager = manager;
-	}
-
 	public String getShip_Date() {
 		return Ship_Date;
+	}
+	public void setShip_ID(int ship_ID){
+		Ship_ID = ship_ID;
 	}
 
 	public void setShip_Date(String ship_Date) {

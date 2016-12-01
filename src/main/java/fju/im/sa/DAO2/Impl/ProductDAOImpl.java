@@ -48,7 +48,7 @@ public class ProductDAOImpl implements ProductDAO{
 	}
 			public void delete(Product aProduct) {
 				
-				String sql = "DELETE FROM Product WHERE productID = ?";
+				String sql = "DELETE FROM Product WHERE Product_ID = ?";
 				try {
 					conn = dataSource.getConnection();
 					smt = conn.prepareStatement(sql);
@@ -141,7 +141,7 @@ public class ProductDAOImpl implements ProductDAO{
 			
 			public Product get(Product aProduct) {
 				
-				String sql = "SELECT * FROM product WHERE productID = ?";
+				String sql = "SELECT * FROM product WHERE Product_ID = ?";
 				try {
 					conn = dataSource.getConnection();
 					smt = conn.prepareStatement(sql);
