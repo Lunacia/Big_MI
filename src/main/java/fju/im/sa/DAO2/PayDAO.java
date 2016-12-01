@@ -6,4 +6,5 @@ import fju.im.sa.entity2.Pay;
 
 public interface PayDAO {
 	public List<Pay> getList();
+	
 }

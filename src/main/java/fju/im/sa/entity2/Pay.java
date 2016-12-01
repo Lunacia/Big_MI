@@ -21,15 +21,8 @@ public class Pay {
 	public int getPay_ID() {
 		return Pay_ID;
 	}
-
-	public Pay(int pay_ID, String pay_Date, boolean pay_Check, int member_ID, int sale_ID, int manager_ID) {
-		super();
+	public void setPay_ID(int pay_ID){
 		Pay_ID = pay_ID;
-		Pay_Date = pay_Date;
-		Pay_Check = pay_Check;
-		Member_ID = member_ID;
-		Sale_ID = sale_ID;
-		Manager_ID = manager_ID;
 	}
 
 	public String getPay_Date() {

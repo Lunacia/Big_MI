@@ -25,20 +25,9 @@ public class Return {
 	public int getReturn_ID() {
 		return Return_ID;
 	}
-
-	public Return(int return_ID, int member_ID, int return_Money, String return_Date, String return_Reason,
-			boolean return_Check, int manager_ID, Manager manager) {
-		super();
+	public void setReturn_ID(int return_ID) {
 		Return_ID = return_ID;
-		Member_ID = member_ID;
-		Return_Money = return_Money;
-		Return_Date = return_Date;
-		Return_Reason = return_Reason;
-		Return_Check = return_Check;
-		Manager_ID = manager_ID;
-		this.manager = manager;
 	}
-
 	public int getReturn_Money() {
 		return Return_Money;
 	}
