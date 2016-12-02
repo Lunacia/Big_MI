@@ -48,10 +48,10 @@
                   </tr>
                 </thead>
                 <tr>
-                  <td>111111</td>
-                  <td>2016/11/10</td>
-                  <td>2016/11/12</td>
-                  <td>未出貨</td>
+                  <td>${sale.id}</td>
+                  <td>${sale.amount}</td>
+                  <td>${sale.date}</td>
+                  <td>${sale.check}</td>
                   <td><a href="saleDetail.jsp" class="w3-btn w3-blue w3-round w3-small" role="button">查看</a></td>
                 </tr>
                 <tr>

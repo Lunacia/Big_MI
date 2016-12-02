@@ -63,7 +63,8 @@
                   <td>${product.name}</td>
                   <td>${product.date}</td>
                   <td>${product.inventory}</td>
-                  <td><a href="uploadProduct.jsp" class="btn btn-primary" role="button">查看</a></td>
+                  <td><a href="uploadProduct?id=${product.id}" class="btn btn-primary" role="button">查看</a></td>
+                  <td></td>
                 </tr>
                 
             </table>

@@ -111,8 +111,7 @@ public class ProductDAOImpl implements ProductDAO{
 					smt = conn.prepareStatement(sql);
 					rs = smt.executeQuery();
 					while(rs.next()){
-						Product aProduct = new Product();
-						aProduct.setProduct_ID(rs.getInt("Product_ID"));			
+						Product aProduct = new Product();			
 						aProduct.setProudct_Name(rs.getString("Product_Name"));
 						aProduct.setProduct_Pic(rs.getString("Product_Pic"));
 						aProduct.setProduct_Intro(rs.getString("Product_Intro"));
@@ -147,8 +146,7 @@ public class ProductDAOImpl implements ProductDAO{
 					smt = conn.prepareStatement(sql);
 					smt.setInt(1, aProduct.getProduct_ID());
 					rs = smt.executeQuery();
-					if(rs.next()){
-						aProduct.setProduct_ID(rs.getInt("Product_ID"));			
+					if(rs.next()){			
 						aProduct.setProudct_Name(rs.getString("Product_Name"));
 						aProduct.setProduct_Pic(rs.getString("Product_Pic"));
 						aProduct.setProduct_Intro(rs.getString("Product_Intro"));

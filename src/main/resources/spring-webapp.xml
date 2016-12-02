@@ -11,7 +11,7 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
     
 
- 	<bean id="productDAO" class="com.sample.store.dao.impl.ProductDAOImpl">
+ 	<bean id="productDAO" class="fju.im.sa.DAO2.Impl.ProductDAOImpl">
 		<property name="dataSource" ref="dataSource" />
 	</bean> 
 
