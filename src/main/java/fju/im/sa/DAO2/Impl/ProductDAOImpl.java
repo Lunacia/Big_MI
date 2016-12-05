@@ -22,7 +22,7 @@ public class ProductDAOImpl implements ProductDAO{
 		this.dataSource = dataSource;
 	}
 	public void insert(Product aProduct) {
-		 String sql = "INSERT INTO Product (Product_Name, Product_Pic, Product_Intro, Product_Date, Product_Price, Product_Stock, Product_Exsit) VALUES(?, ?, ?, ?, ?, ?, ?)";	
+		 String sql = "INSERT INTO Product (Product_Name, Product_Pic, Product_Intro, Product_Date, Product_Price, Product_Stock, Product_Exsit)VALUES(?, ?, ?, ?, ?, ?, ?)";	
 			try {
 				conn = dataSource.getConnection();
 				smt = conn.prepareStatement(sql);
@@ -111,7 +111,8 @@ public class ProductDAOImpl implements ProductDAO{
 					smt = conn.prepareStatement(sql);
 					rs = smt.executeQuery();
 					while(rs.next()){
-						Product aProduct = new Product();			
+						Product aProduct = new Product();
+						aProduct.setProduct_ID(rs.getInt("Product_ID"));			
 						aProduct.setProudct_Name(rs.getString("Product_Name"));
 						aProduct.setProduct_Pic(rs.getString("Product_Pic"));
 						aProduct.setProduct_Intro(rs.getString("Product_Intro"));
@@ -146,7 +147,8 @@ public class ProductDAOImpl implements ProductDAO{
 					smt = conn.prepareStatement(sql);
 					smt.setInt(1, aProduct.getProduct_ID());
 					rs = smt.executeQuery();
-					if(rs.next()){			
+					if(rs.next()){
+						aProduct.setProduct_ID(rs.getInt("Product_ID"));			
 						aProduct.setProudct_Name(rs.getString("Product_Name"));
 						aProduct.setProduct_Pic(rs.getString("Product_Pic"));
 						aProduct.setProduct_Intro(rs.getString("Product_Intro"));

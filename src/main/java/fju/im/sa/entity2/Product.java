@@ -26,7 +26,7 @@ public class Product {
 	public int getProduct_ID() {
 		return Product_ID;
 	}
-	public void setProduc_ID(int product_ID){
+	public void setProduct_ID(int product_ID) {
 		Product_ID = product_ID;
 	}
 

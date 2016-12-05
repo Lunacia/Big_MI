@@ -30,20 +30,7 @@ public class Member {
 		return Member_ID;
 	}
 
-	public Member(int member_ID, String member_Name, String member_Email, String member_Address, String member_Password,
-			String member_Tel, int member_Credit, String member_Birth, Cart[] cart, Pay[] pay) {
-		super();
-		Member_ID = member_ID;
-		Member_Name = member_Name;
-		Member_Email = member_Email;
-		Member_Address = member_Address;
-		Member_Password = member_Password;
-		Member_Tel = member_Tel;
-		Member_Credit = member_Credit;
-		Member_Birth = member_Birth;
-		this.cart = cart;
-		this.pay = pay;
-	}
+	
 
 	public String getMember_Name() {
 		return Member_Name;

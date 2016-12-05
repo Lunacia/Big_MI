@@ -35,7 +35,7 @@
 		<beans:property name="prefix" value="/WEB-INF/views/manager-ship/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	<context:component-scan base-package="fju.im.sa" />
+	<context:component-scan base-package="fju.im.sa.controller" />
 	
 	
 	

@@ -23,7 +23,7 @@ public class ProductController {
 	@RequestMapping(value = "/product", method = RequestMethod.GET)
 	public ModelAndView getProductList(){
 	
-		ModelAndView model = new ModelAndView("manager-product/index");
+		ModelAndView model = new ModelAndView("/manager-product/index");
 		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
 		List<Product> productList = new ArrayList<Product>();
 		productList = productDAO.getList();
@@ -34,7 +34,7 @@ public class ProductController {
 	 
 	@RequestMapping(value = "/insertProduct", method = RequestMethod.GET)
 	public ModelAndView insertProductPage(){
-		ModelAndView model = new ModelAndView("manager-product/newProduct");
+		ModelAndView model = new ModelAndView("/manager-product/newProduct");
 		return model;
 	}
 	@RequestMapping(value = "/insertproduct", method = RequestMethod.POST)
@@ -47,21 +47,18 @@ public class ProductController {
 	}
 @RequestMapping(value = "/updateproduct", method = RequestMethod.GET)
     public ModelAndView updateProductPage(@ModelAttribute Product aProduct){
-	    ModelAndView model = new ModelAndView("manager-product/uploadProduct");
+	    ModelAndView model = new ModelAndView("/manager-product/uploadProduct");
 	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
 	    aProduct = productDAO.get(aProduct);
-	    model.addObject("Product", aProduct);
+	    model.addObject("aProduct", aProduct);
 	    return model;
 }
-@RequestMapping(value = "/updateproduct", method = RequestMethod.POST)
-public ModelAndView updateProduct(@ModelAttribute Product aProduct){
-	ModelAndView model = new ModelAndView("redirect:/manager-product/uploadProduct");
-	ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-	productDAO.update(aProduct);	
-	return model;
+@RequestMapping(value = "/updateproduduct", method = RequestMethod.POST)
+     public ModelAndView updateProduct(@ModelAttribute Product aProduct){
+	    ModelAndView model = new ModelAndView("redirect:/manager-product/index");
+	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
+	    productDAO.update(aProduct);
+	    return model;
 }
-
-
-	
 	
 	}
