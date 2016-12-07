@@ -31,7 +31,7 @@ body, html {
 <div>
   <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
     <li>
-      <a href="index.jsp" class="logo" style="padding:0px;padding-top:5px;"><img src="/SA/img/logo.png"></a>
+      <a href="index.jsp" class="logo" style="padding:0px;padding-top:5px;"><img src="resources/img/logo.png"></a>
     </li>
     <!-- Right-sided navbar links -->
     <li class="w3-dropdown-hover w3-right w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> 服務專區</a>
@@ -41,7 +41,7 @@ body, html {
         </div>
     </li>
     <li class="w3-right w3-hide-small"><a href="cart.jsp"><i class="fa fa-shopping-cart"></i> 購物車</a></li>
-    <li class="w3-right w3-hide-small"><a href="login.jsp"><i class="glyphicon glyphicon-log-in"></i> 登入</a></li>
+    <li class="w3-right w3-hide-small"><a href="/sa/login"><i class="glyphicon glyphicon-log-in"></i> 登入</a></li>
     <li class=" w3-dropdown-hover w3-right w3-hide-small">
         <a href="#team"><i class="fa fa-user"></i> 會員中心</a>
             <div class="w3-dropdown-content w3-border w3-card-4">
@@ -149,7 +149,7 @@ window.onclick = function(event) {
     <!-- Header with full-height image -->
 <header class="w3-display-container w3-grayscale-min" id="home">
   <div class="w3-animate-left" style="margin-left:10%;margin-top:3%;">
-      <img src="/SA/img/iphone-7.png" width="50%" height="50%" >
+      <img src="resources/img/iphone-7.png" width="50%" height="50%" >
   </div>
   <div class="w3-display-left w3-text-white" style="margin-top:8%;margin-left:55%;">
     <span class="w3-jumbo w3-hide-small w3-animate-opacity w3-text-black w3-margin-bottom">You must to own 7。</span><br>

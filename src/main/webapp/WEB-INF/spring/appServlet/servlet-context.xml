@@ -20,6 +20,7 @@
 		<beans:property name="prefix" value="/WEB-INF/views/user/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
+
 	
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/manager-product/" />
@@ -35,7 +36,7 @@
 		<beans:property name="prefix" value="/WEB-INF/views/manager-ship/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	<context:component-scan base-package="fju.im.sa.controller" />
+	<context:component-scan base-package="fju.im.sa" />
 	
 	
 	
