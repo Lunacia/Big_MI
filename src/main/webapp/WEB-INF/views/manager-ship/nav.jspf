@@ -4,7 +4,7 @@
     <div class="container-fluid">
     <div class="navbar-header">
             <a class="navbar-brand" href="index.jsp">
-                神腦國際-出貨系統
+                大米國際-出貨系統
             </a>
     </div>
     <a class="btn btn-default navbar-right" href="#" role="button" style="margin:10px">登出</a>

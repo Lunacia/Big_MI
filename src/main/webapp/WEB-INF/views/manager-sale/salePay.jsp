@@ -15,9 +15,10 @@
 
     <body>
         <%@include file="nav.jspf" %>
+           <div class="row">
             <div class="col-sm-6">
                 <h1 style="text-align:center">付款狀態</h1>
-                <table class="w3-table w3-striped" style="width:80%;margin-left:8%;">
+                <table class="w3-table w3-striped" style="width:90%;margin-left:8%;">
                     <thead>
                         <tr class="w3-light-grey">
                             <th>付款編號</th>
@@ -27,30 +28,32 @@
                             <th>建立出貨單</th>
                         </tr>
                     </thead>
-                    <tr>
-                        <td>1</td>
-                        <td>1111</td>
-                        <td>2016/11/12</td>
-                        <td>已付款</td>
-                        <td>
-                            <form method="post" action="salePay.jsp">
-                                <input type="hidden" value="1111" name="pay-saleid">
-                                <button type="submit" class="w3-btn w3-blue w3-round w3-small" name="pay-creatship">建立出貨單</button>
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>1222</td>
-                        <td>2016/11/12</td>
-                        <td>未付款</td>
-                        <td>
-                            <form method="post" action="salePay.jsp">
-                                <input type="hidden" value="1111" name="pay-saleid">
-                                <button type="submit" class="w3-btn w3-blue w3-round w3-small" name="pay-creatship">建立出貨單</button>
-                            </form>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1111</td>
+                            <td>2016/11/12</td>
+                            <td>已付款</td>
+                            <td>
+                                <form method="post" action="salePay.jsp">
+                                    <input type="hidden" value="1111" name="pay-saleid">
+                                    <button type="submit" class="w3-btn w3-blue w3-round w3-small" name="pay-creatship">建立出貨單</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1222</td>
+                            <td>2016/11/12</td>
+                            <td>未付款</td>
+                            <td>
+                                <form method="post" action="salePay.jsp">
+                                    <input type="hidden" value="1111" name="pay-saleid">
+                                    <button type="submit" class="w3-btn w3-blue w3-round w3-small" name="pay-creatship">建立出貨單</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             </div>
@@ -92,6 +95,7 @@
                         x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-theme", "");
                     }
                 }
+                
             </script>
     </body>
 

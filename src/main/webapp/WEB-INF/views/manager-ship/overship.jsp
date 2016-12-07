@@ -9,6 +9,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/themes/hot-sneaks/jquery-ui.css" rel="stylesheet">
+        <link href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" rel="stylesheet">
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.0.min.js"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
         <style>
             td {
                 font-size: 16px;
@@ -37,7 +42,7 @@
                     </nav>
                     <div class="col-sm-8">
                         <h1 style="text-align:center">逾期未出貨區</h1>
-                        <table class="table table-hover" style="width:95%;margin-left:8%;">
+                        <table class="table table-hover" style="width:95%;margin-left:8%;" id="table1">
                             <thead>
                                 <tr class="w3-light-grey">
                                     <th>出貨單編號</th>
@@ -47,21 +52,28 @@
                                     <th>詳細資訊</th>
                                 </tr>
                             </thead>
-                            <tr>
-                                <td>111111</td>
-                                <td>2016/11/10</td>
-                                <td>2016/11/12</td>
-                                <td>未出貨</td>
-                                <td><a href="shipDetail.jsp" class="btn btn-info btn-sm" role="button">查看</a></td>
-                            </tr>
-                            <tr>
-                                <td>111111</td>
-                                <td>2016/11/10</td>
-                                <td>2016/11/12</td>
-                                <td>未出貨</td>
-                                <td><a href="shipDetail.jsp" class="btn btn-info btn-sm" role="button">查看</a></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>111111</td>
+                                    <td>2016/11/10</td>
+                                    <td>2016/11/12</td>
+                                    <td>未出貨</td>
+                                    <td><a href="shipDetail.jsp" class="btn btn-info btn-sm" role="button">查看</a></td>
+                                </tr>
+                                <tr>
+                                    <td>111111</td>
+                                    <td>2016/11/10</td>
+                                    <td>2016/11/12</td>
+                                    <td>未出貨</td>
+                                    <td><a href="shipDetail.jsp" class="btn btn-info btn-sm" role="button">查看</a></td>
+                                </tr>
+                            </tbody>
                         </table>
+                        <script>
+                            $(document).ready(function () {
+                                $("#table1").dataTable();
+                            });
+                        </script>
                     </div>
                 </div>
             </div>

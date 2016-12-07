@@ -27,6 +27,7 @@
                             <th>詳細資訊</th>
                         </tr>
                     </thead>
+                    <tbody>
                     <tr>
                         <td>111111</td>
                         <td>2016/11/10</td>
@@ -41,6 +42,7 @@
                         <td>未出貨</td>
                         <td><a href="saleDetail.jsp" class="w3-btn w3-blue w3-round w3-small" role="button">查看</a></td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
             </div>
@@ -82,6 +84,9 @@
                         x.previousElementSibling.className = x.previousElementSibling.className.replace(" w3-theme", "");
                     }
                 }
+                $(document).ready(function () {
+                    $("#table1").dataTable();
+                });
             </script>
     </body>
 
