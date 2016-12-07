@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<div>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <div class="navbar-header">
+            <a class="navbar-brand" href="index.jsp">
+                神腦國際-出貨系統
+            </a>
+    </div>
+    <a class="btn btn-default navbar-right" href="#" role="button" style="margin:10px">登出</a>
+    <p class="navbar-text navbar-right">目前登入出貨人員： <a href="#" class="navbar-link">Mark Otto</a></p>
+    <form class="navbar-form navbar-right" action="shipSearch.jsp" method="post">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="請輸入銷貨單編號" name="ship-search">
+        </div>
+        <button type="submit" class="btn btn-default" name="ship-search-submit">查詢</button>
+    </form>
+  </div>
+   </nav>
+        </div>

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:3;width:250px;" id="mySidenav">
+  <a href="#" class="w3-border-bottom w3-large"><img src="/SA/img/Head.png" style="width:80%;"></a>
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-text-teal w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
+  <a href="index.jsp">本日銷貨單 <span class="w3-badge w3-red">2</span></a>
+  <a href="salePay.jsp">付款紀錄 <span class="w3-badge w3-red">2</span></a>
+  <a href="saleTrace.jsp">追蹤出貨狀況 <span class="w3-badge w3-red">1</span></a>
+  <a href="#">登出</a>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+<div class="top">
+    <ul class="w3-navbar w3-black ">
+        <form method="post" action="saleResault.jsp">
+        <li><input type="text" class="w3-input w3-dark-grey w3-padding-16" placeholder="輸入銷售單編號" name="sale-result"></li>
+        <li><button class="w3-btn w3-green w3-padding-16">Go</button></li>
+        </form>
+        <li class="w3-right w3-padding-16" style="margin-right:10px">目前登入銷售人員：馬克白</li>
+    </ul>
+</div>
