@@ -156,6 +156,11 @@ public class MemberDAOImpl implements MemberDAO{
 				String sql = "SELECT Member_Name,Member_Password FROM member WHERE Member_ID = ?";
 				
 			}
+
+			public Member get(int Member_ID) {
+				// TODO Auto-generated method stub
+				return null;
+			}
 	
 }
 

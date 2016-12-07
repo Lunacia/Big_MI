@@ -81,7 +81,7 @@ public class CartDAOImpl implements CartDAO{
 			rs = smt.executeQuery();
 			while(rs.next()){
 				Cart cart = new Cart();
-				cart.setCart_total(rs.getInt("Cart_total"));
+				cart.setCart_Total(rs.getInt("Cart_total"));
 				cartList.add(cart);
 			}
 			rs.close();

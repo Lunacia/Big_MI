@@ -17,24 +17,10 @@
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/user/" />
+		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
+	</beans:bean >
 	
-	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/manager-product/" />
-		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
-	
-	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/manager-sale/" />
-		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
-	
-	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<beans:property name="prefix" value="/WEB-INF/views/manager-ship/" />
-		<beans:property name="suffix" value=".jsp" />
-	</beans:bean>
 	<context:component-scan base-package="fju.im.sa.controller" />
 	
 	

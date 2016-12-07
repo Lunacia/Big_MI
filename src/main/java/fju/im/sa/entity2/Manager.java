@@ -30,22 +30,6 @@ public class Manager {
 		return Manager_ID;
 	}
 
-	public Manager(int manager_ID, String manager_Name, String manager_Email, String manager_Password,
-			String manager_Tel, String manager_Occ, int manager_OccID, Shipment[] shipment, Return[] salesreturn,
-			Sale[] sale) {
-		super();
-		Manager_ID = manager_ID;
-		Manager_Name = manager_Name;
-		Manager_Email = manager_Email;
-		Manager_Password = manager_Password;
-		Manager_Tel = manager_Tel;
-		Manager_Occ = manager_Occ;
-		Manager_OccID = manager_OccID;
-		this.shipment = shipment;
-		this.salesreturn = salesreturn;
-		this.sale = sale;
-	}
-
 	public String getManager_Name() {
 		return Manager_Name;
 	}
