@@ -20,45 +20,51 @@ public class ProductController {
     
 	ApplicationContext context =  new ClassPathXmlApplicationContext("spring-module.xml");
 	
-	@RequestMapping(value = "/product", method = RequestMethod.GET)
-	public ModelAndView getProductList(){
-	
-		ModelAndView model = new ModelAndView("/manager-product/index");
-		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-		List<Product> productList = new ArrayList<Product>();
-		productList = productDAO.getList();
-		model.addObject("productList", productList);
-		
-		return model;
+	@RequestMapping(value = "/manager-product", method = RequestMethod.GET)
+	    public ModelAndView home(String name){
+		    ModelAndView model = new ModelAndView("manager-product/index");
+		    model.addObject("message");
+		    return model;
 	}
-	 
-	@RequestMapping(value = "/insertProduct", method = RequestMethod.GET)
-	public ModelAndView insertProductPage(){
-		ModelAndView model = new ModelAndView("/manager-product/newProduct");
-		return model;
-	}
-	@RequestMapping(value = "/insertproduct", method = RequestMethod.POST)
-	public ModelAndView insertProduct(@ModelAttribute Product aProduct){
-		ModelAndView model = new ModelAndView("redirect:/manager-product/index");
-		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-		productDAO.insert(aProduct);
-			
-		return model;
-	}
-@RequestMapping(value = "/updateproduct", method = RequestMethod.GET)
-    public ModelAndView updateProductPage(@ModelAttribute Product aProduct){
-	    ModelAndView model = new ModelAndView("/manager-product/uploadProduct");
-	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-	    aProduct = productDAO.get(aProduct);
-	    model.addObject("aProduct", aProduct);
-	    return model;
-}
-@RequestMapping(value = "/updateproduduct", method = RequestMethod.POST)
-     public ModelAndView updateProduct(@ModelAttribute Product aProduct){
-	    ModelAndView model = new ModelAndView("redirect:/manager-product/index");
-	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-	    productDAO.update(aProduct);
-	    return model;
-}
+//	@RequestMapping(value = "/product", method = RequestMethod.GET)
+//	public ModelAndView getProductList(){
+//	
+//		ModelAndView model = new ModelAndView("/manager-product/index");
+//		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
+//		List<Product> productList = new ArrayList<Product>();
+//		productList = productDAO.getList();
+//		model.addObject("productList", productList);
+//		
+//		return model;
+//	}
+//	 
+//	@RequestMapping(value = "/insertProduct", method = RequestMethod.GET)
+//	public ModelAndView insertProductPage(){
+//		ModelAndView model = new ModelAndView("/manager-product/newProduct");
+//		return model;
+//	}
+//	@RequestMapping(value = "/insertproduct", method = RequestMethod.POST)
+//	public ModelAndView insertProduct(@ModelAttribute Product aProduct){
+//		ModelAndView model = new ModelAndView("redirect:/manager-product/index");
+//		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
+//		productDAO.insert(aProduct);
+//			
+//		return model;
+//	}
+//@RequestMapping(value = "/updateproduct", method = RequestMethod.GET)
+//    public ModelAndView updateProductPage(@ModelAttribute Product aProduct){
+//	    ModelAndView model = new ModelAndView("/manager-product/uploadProduct");
+//	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
+//	    aProduct = productDAO.get(aProduct);
+//	    model.addObject("aProduct", aProduct);
+//	    return model;
+//}
+//@RequestMapping(value = "/updateproduduct", method = RequestMethod.POST)
+//     public ModelAndView updateProduct(@ModelAttribute Product aProduct){
+//	    ModelAndView model = new ModelAndView("redirect:/manager-product/index");
+//	    ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
+//	    productDAO.update(aProduct);
+//	    return model;
+//}
 	
 	}

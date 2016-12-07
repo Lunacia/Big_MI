@@ -28,7 +28,96 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
+<<<<<<< Updated upstream
 <%@include file="nav.jspf" %>
+=======
+<div>
+  <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
+    <li>
+      <a href="/sa" class="logo" style="padding:0px;padding-top:5px;"><img src="resources/img/logo.png"></a>
+    </li>
+    <!-- Right-sided navbar links -->
+    <li class="w3-dropdown-hover w3-right w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> 服務專區</a>
+        <div class="w3-dropdown-content w3-border w3-card-4">
+                <a href="/sa/serviceP">商品服務</a>
+                <a href="/sa/contact">聯絡我們</a>
+        </div>
+    </li>
+    <li class="w3-right w3-hide-small"><a href="/sa/cart"><i class="fa fa-shopping-cart"></i> 購物車</a></li>
+    <li class="w3-right w3-hide-small"><a href="/sa/login"><i class="glyphicon glyphicon-log-in"></i> 登入</a></li>
+    <li class=" w3-dropdown-hover w3-right w3-hide-small">
+        <a href="#team"><i class="fa fa-user"></i> 會員中心</a>
+            <div class="w3-dropdown-content w3-border w3-card-4">
+                    <a href="/sa/signup">註冊</a>
+                    <a href="/sa/member">會員資料</a>
+                    <a href="/sa/order">訂單查詢</a>
+            </div>
+    </li>
+    <li class=" w3-dropdown-hover w3-right w3-hide-small">  
+        <a href="#team"><i class="glyphicon glyphicon-phone"></i> 商品資訊</a>
+            <div class="w3-dropdown-content w3-border w3-card-4">
+                <a href="/sa/productList/?B=Apple">Apple</a>
+                <a href="/sa/productList?B=Samsung">Samsung</a>
+                <a href="/sa/productList?B=HTC">HTC</a>
+                <a href="/sa/productList?B=Sony">Sony</a>
+                <a href="/sa/productList?B=Other">其他品牌</a>
+            </div>
+    </li>
+      <li class="w3-right w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><a href="#about"><i class="fa fa-search"></i> 搜尋</a></li>
+      <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-closebtn">&times;</span>
+        <h2>搜尋條件</h2>
+      </header>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        </div>
+      </div>
+      <div class="w3-container">
+        <form class="form-horizontal" method="post" action="searchResult.jsp">
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-2 control-label"> 關鍵字：</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPassword3" placeholder="關鍵字" name="keyword">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label"> 品牌：</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="inputPassword3" name="brand">
+        <option value=""></option>
+        <option value="Apple">Apple</option>
+        <option value="HTC">HTC</option>
+        <option value="Sony">Sony</option>
+        <option value="Samsung">Samsung</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group form-inline">
+    <label for="inputPassword3" class="col-sm-2 control-label"> 價格範圍：</label>
+    <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPassword3" placeholder="0" name="minprice" style="width:30%;">
+           <b class="thicker" style="font-size:24px;"> ~ </b> 
+          <input type="text" class="form-control" id="inputPassword3" placeholder="99999" name="maxprice" style="width:30%;">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">送出</button>
+      <button type="reset" class="btn btn-primary">清除</button>
+    </div>
+  </div>
+</form>
+      </div>
+    </div>
+  </div>
+>>>>>>> Stashed changes
 
 
 <!-- Sidenav on small screens when clicking the menu icon -->
