@@ -117,7 +117,11 @@ body, html {
   </div>
 =======
 <%@include file="nav.jspf" %>
+<<<<<<< Updated upstream
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> origin/lawrence
+>>>>>>> Stashed changes
 
 
 <!-- Sidenav on small screens when clicking the menu icon -->

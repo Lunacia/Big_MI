@@ -29,6 +29,12 @@
 <<<<<<< HEAD
 	<context:component-scan base-package="fju.im.sa.controller" />
 =======
+<<<<<<< Updated upstream
+=======
+	</beans:bean>
+
+	
+>>>>>>> Stashed changes
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/manager-product/" />
 		<beans:property name="suffix" value=".jsp" />
@@ -44,7 +50,11 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	<context:component-scan base-package="fju.im.sa" />
+<<<<<<< Updated upstream
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> origin/lawrence
+>>>>>>> Stashed changes
 	
 	
 	
