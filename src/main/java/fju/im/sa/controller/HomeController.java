@@ -26,14 +26,25 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home(String name) {
+<<<<<<< HEAD
 		 ModelAndView model2 = new ModelAndView("user/index");
 		 model2.addObject("message");
 		 return model2;
+=======
+		 ModelAndView model1 = new ModelAndView("index");
+		 return model1;
+>>>>>>> refs/remotes/origin/master
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
+<<<<<<< HEAD
     public ModelAndView LoginPage(String name) {
 		 ModelAndView model2 = new ModelAndView("user/login");
 		 model2.addObject("message");
 		 return model2;
+=======
+	public ModelAndView LoginPage(String name) {
+		ModelAndView model1 = new ModelAndView("login");
+		 return model1;
+>>>>>>> refs/remotes/origin/master
 	}
 }
