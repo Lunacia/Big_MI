@@ -28,8 +28,11 @@ public class HomeController {
 		 ModelAndView model1 = new ModelAndView("user/index");
 		 return model1;
 	}
-
-	
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public ModelAndView returnhome() {
+		 ModelAndView model1 = new ModelAndView("user/index");
+		 return model1;
+	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView LoginPage(String name) {
 		ModelAndView model1 = new ModelAndView("user/login");

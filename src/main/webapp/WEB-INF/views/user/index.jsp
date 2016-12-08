@@ -28,6 +28,7 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
+
 <%@include file="nav.jspf" %>
 
 
@@ -44,7 +45,7 @@ body, html {
     <!-- Header with full-height image -->
 <header class="w3-display-container w3-grayscale-min" id="home">
   <div class="w3-animate-left" style="margin-left:10%;margin-top:3%;">
-      <img src="/SA/img/iphone-7.png" width="50%" height="50%" >
+      <img src="resources/img/iphone-7.png" width="50%" height="50%" >
   </div>
   <div class="w3-display-left w3-text-white" style="margin-top:8%;margin-left:55%;">
     <span class="w3-jumbo w3-hide-small w3-animate-opacity w3-text-black w3-margin-bottom">You must to own 7。</span><br>
