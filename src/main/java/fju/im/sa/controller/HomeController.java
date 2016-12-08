@@ -87,6 +87,11 @@ public class HomeController {
 		ModelAndView model1 = new ModelAndView("user/contact");
 		 return model1;
 	}
+	@RequestMapping(value = "/know", method = RequestMethod.GET)
+	public ModelAndView Knowmore() {
+		 ModelAndView model1 = new ModelAndView("user/product");
+		 return model1;
+	}
 	//@RequestMapping(value = "/productList/", method = RequestMethod.GET)
 	//public ModelAndView ProductApplePage(String name) {
 		//ModelAndView model1 = new ModelAndView("productList");

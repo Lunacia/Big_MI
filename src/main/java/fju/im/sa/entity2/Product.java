@@ -4,7 +4,7 @@ public class Product {
 
 	private int Product_ID;
 
-	private String Proudct_Name;
+	private String Product_Name;
 
 	private String Product_Pic;
 
@@ -45,12 +45,12 @@ public class Product {
 		this.cart = cart;
 	} */
 
-	public String getProudct_Name() {
-		return Proudct_Name;
+	public String getProduct_Name() {
+		return Product_Name;
 	}
 
-	public void setProudct_Name(String proudct_Name) {
-		Proudct_Name = proudct_Name;
+	public void setProduct_Name(String product_Name) {
+		Product_Name = product_Name;
 	}
 
 	public String getProduct_Pic() {

@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <!doctype html>
     <html>
 
@@ -27,20 +28,15 @@
                             <th>動作</th>
                         </tr>
                     </thead>
+                    <c:forEach items="${productList}" var="product">
                     <tr>
-                        <td>111111</td>
-                        <td>Iphone 7(黑,128G)</td>
-                        <td>2016/11/12</td>
-                        <td>50</td>
-                        <td><a href="uploadProduct.jsp" class="btn btn-primary" role="button">進貨</a> <a href="＃" class="btn btn-default" role="button">下架</a></td>
+                        <td><c:out value="${product.getProduct_ID()}"></c:out></td>
+                        <td><c:out value="${product.getProduct_Name()}"></c:out></td>
+                        <td><c:out value="${product.getProduct_Date()}"></c:out></td>
+                        <td><c:out value="${product.getProduct_Stock()}"></c:out></td>
+                        <td><a href="" class="btn btn-primary" role="button">進貨</a> <a href="＃" class="btn btn-default" role="button">下架</a></td>
                     </tr>
-                    <tr>
-                        <td>111111</td>
-                        <td>Iphone 7(紅,128G)</td>
-                        <td>2016/11/12</td>
-                        <td>10</td>
-                        <td><a href="uploadProduct.jsp" class="btn btn-primary" role="button">進貨</a> <a href="＃" class="btn btn-default" role="button">下架</a></td>
-                    </tr>
+                    </c:forEach>
                 </table>
             </div>
     </body>

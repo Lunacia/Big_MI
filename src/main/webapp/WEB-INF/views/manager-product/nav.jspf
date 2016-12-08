@@ -7,8 +7,8 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.jsp">需進貨商品</a></li>
-                        <li><a href="newProduct.jsp">商品上架</a></li>
+                        <li><a href="manager-product">需進貨商品</a></li>
+                        <li><a href="insertProduct">商品上架</a></li>
                     </ul>
                     <form class="navbar-form navbar-left" action="prodResault.jsp">
                         <div class="form-group">
