@@ -44,7 +44,7 @@ body, html {
     編輯密碼
 </div>
 <div class="w3-display-middle" style="width:50%;height:50%;margin-top:8%">
-    <form class="form-horizontal" method="post" action="successEdit.jsp">
+    <form class="form-horizontal" method="post" action="successEdit">
     <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label"><i class="fa fa-key"></i> 舊密碼</label>
     <div class="col-sm-10">

@@ -20,14 +20,7 @@ public class Cart {
 		return Cart_ID;
 	}
 
-	public Cart(int cart_ID, int cart_Total, int member_ID, Sale sale, Product[] product) {
-		super();
-		Cart_ID = cart_ID;
-		Cart_Total = cart_Total;
-		Member_ID = member_ID;
-		this.sale = sale;
-		this.product = product;
-	}
+	
 
 	public int getCart_Total() {
 		return Cart_Total;

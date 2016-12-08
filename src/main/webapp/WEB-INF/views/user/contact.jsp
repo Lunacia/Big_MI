@@ -44,7 +44,7 @@ body, html {
     聯絡大米
 </div>
 <div class="w3-display-middle" style="width:50%;height:50%;margin-top:3%">
-    <form class="form-horizontal" method="post" action="successContact.jsp">
+    <form class="form-horizontal" method="post" action="successContact"></form>
   <div class="form-group">
       <label for="inputEmail3" class="col-sm-2 control-label"><i class="fa fa-user"></i> 名字</label>
     <div class="col-sm-10">

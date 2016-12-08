@@ -47,7 +47,7 @@ td {
 <div class="w3-display-topmiddle w3-container w3-padding-4 w3-center w3-xxlarge" style="width:50%;margin-top:8%"><i class="fa fa-shopping-cart"></i> 購物車
 </div>
 <div style="width:50%;height:50%;margin-top:10%;margin-left:25%">
- <form class="form-horizontal" method="post" action="confirm.jsp">
+ <form class="form-horizontal" method="post" action="confirm">
   <div class="form-group"> 
     <table class="w3-table w3-striped w3-bordered w3-large">
     <thead>
@@ -62,7 +62,7 @@ td {
     </thead>
     <tr>
       <td>11111</td>
-        <td><a href="product.jsp">Iphone 7(黑,128G)</a></td>
+        <td><a href="product">Iphone 7(黑,128G)</a></td>
       <td>29000元</td>
       <td>1</td>
       <td>29000元</td>
@@ -86,7 +86,7 @@ td {
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary" style="margin-left:27%">去結帳</button>
-      <a href="index.jsp" class="btn btn-default">繼續購物</a>
+      <a href="index" class="btn btn-default">繼續購物</a>
     </div>
   </div>
 </form>

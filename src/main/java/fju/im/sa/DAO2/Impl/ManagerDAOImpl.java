@@ -61,4 +61,10 @@ public class ManagerDAOImpl implements ManagerDAO{
 		}
 		return managerList;
 	}
+
+	@Override
+	public void login(String Manager_Name, String Manager_Password) {
+		// TODO Auto-generated method stub
+		
+	}
 }

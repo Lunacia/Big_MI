@@ -47,7 +47,7 @@ td {
 <div class="w3-display-topmiddle w3-container w3-padding-4 w3-center w3-xxlarge" style="width:50%;margin-top:8%"><i class="fa fa-check-square"></i> 確認下訂
 </div>
 <div style="width:50%;height:50%;margin-top:10%;margin-left:25%">
- <form class="form-horizontal" method="post" action="successBuy.jsp">
+ <form class="form-horizontal" method="post" action="successBuy">
   <div class="form-group">
     <table class="w3-table w3-striped w3-bordered w3-large">
     <thead>

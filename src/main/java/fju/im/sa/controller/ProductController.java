@@ -20,21 +20,16 @@ public class ProductController {
     
 	ApplicationContext context =  new ClassPathXmlApplicationContext("spring-module.xml");
 	
-	@RequestMapping(value = "/product", method = RequestMethod.GET)
+	@RequestMapping(value = "/manager-product", method = RequestMethod.GET)
 	public ModelAndView getProductList(){
 	
-		ModelAndView model = new ModelAndView("/manager-product/index");
-		ProductDAO productDAO = (ProductDAO)context.getBean("ProductDAO");
-		List<Product> productList = new ArrayList<Product>();
-		productList = productDAO.getList();
-		model.addObject("productList", productList);
-		
+		ModelAndView model = new ModelAndView("manager-product/index");	
 		return model;
 	}
 	 
 	@RequestMapping(value = "/insertProduct", method = RequestMethod.GET)
 	public ModelAndView insertProductPage(){
-		ModelAndView model = new ModelAndView("/manager-product/newProduct");
+		ModelAndView model = new ModelAndView("manager-product/newProduct");
 		return model;
 	}
 	@RequestMapping(value = "/insertproduct", method = RequestMethod.POST)
