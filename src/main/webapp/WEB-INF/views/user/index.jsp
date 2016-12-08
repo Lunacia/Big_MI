@@ -49,11 +49,9 @@ body, html {
   </div>
   <div class="w3-display-left w3-text-white" style="margin-top:8%;margin-left:55%;">
     <span class="w3-jumbo w3-hide-small w3-animate-opacity w3-text-black w3-margin-bottom">You must to own 7。</span><br>
-<<<<<<< Updated upstream
+
     <p><a href="product" class="w3-btn w3-black w3-padding-large w3-xlarge w3-margin-top w3-hover-opacity-off w3-text-white w3-animate-opacity">知道更多</a></p>
-=======
-    <p><a href="know" class="w3-btn w3-black w3-padding-large w3-xlarge w3-margin-top w3-hover-opacity-off w3-text-white w3-animate-opacity">知道更多</a></p>
->>>>>>> Stashed changes
+
   </div>
 
 <script>

@@ -26,14 +26,6 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home() {
 		 ModelAndView model1 = new ModelAndView("user/index");
-<<<<<<< Updated upstream
-		 return model1;
-	}
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public ModelAndView returnhome() {
-		 ModelAndView model1 = new ModelAndView("user/index");
-=======
->>>>>>> Stashed changes
 		 return model1;
 	}
 
@@ -58,14 +50,11 @@ public class HomeController {
 		ModelAndView model1 = new ModelAndView("user/order");
 		 return model1;
 	}
-<<<<<<< Updated upstream
-=======
 	@RequestMapping(value = "/orderDetail", method = RequestMethod.GET)
 	public ModelAndView OrderDetailPage(String name) {
 		ModelAndView model1 = new ModelAndView("user/orderDetail");
 		 return model1;
 	}
->>>>>>> Stashed changes
 	@RequestMapping(value = "/memberEdit", method = RequestMethod.GET)
 	public ModelAndView MemberEditPage(String name) {
 		ModelAndView model1 = new ModelAndView("user/memberEdit");
@@ -79,7 +68,6 @@ public class HomeController {
 	@RequestMapping(value = "/serviceP", method = RequestMethod.GET)
 	public ModelAndView ServicepPage(String name) {
 		ModelAndView model1 = new ModelAndView("user/serviceP");
-<<<<<<< Updated upstream
 		 return model1;
 	}
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
@@ -87,33 +75,20 @@ public class HomeController {
 		ModelAndView model1 = new ModelAndView("user/contact");
 		 return model1;
 	}
-	@RequestMapping(value = "/know", method = RequestMethod.GET)
+	@RequestMapping(value = "/product", method = RequestMethod.GET)
 	public ModelAndView Knowmore() {
 		 ModelAndView model1 = new ModelAndView("user/product");
 		 return model1;
 	}
-	//@RequestMapping(value = "/productList/", method = RequestMethod.GET)
-	//public ModelAndView ProductApplePage(String name) {
-		//ModelAndView model1 = new ModelAndView("productList");
-		 //return model1;
-	//}
 
-=======
-		 return model1;
-	}
-	@RequestMapping(value = "/contact", method = RequestMethod.GET)
-	public ModelAndView ContactPage(String name) {
-		ModelAndView model1 = new ModelAndView("user/contact");
-		 return model1;
-	}
 	@RequestMapping(value = "/productList", method = RequestMethod.GET)
 	public ModelAndView ProductCatoryPage(String name) {
 		ModelAndView model1 = new ModelAndView("user/productList");
 		 return model1;
 	}
-	@RequestMapping(value = "/searchResault", method = RequestMethod.GET)
+	@RequestMapping(value = "/searchResult", method = RequestMethod.GET)
 	public ModelAndView searchResaultPage(String name) {
-		ModelAndView model1 = new ModelAndView("user/searchResault");
+		ModelAndView model1 = new ModelAndView("user/searchResult");
 		 return model1;
 	}
 	@RequestMapping(value = "/successBuy", method = RequestMethod.GET)
@@ -146,6 +121,5 @@ public class HomeController {
 		ModelAndView model1 = new ModelAndView("user/successSign");
 		 return model1;
 	}
->>>>>>> Stashed changes
 
 }

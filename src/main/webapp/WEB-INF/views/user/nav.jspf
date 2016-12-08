@@ -1,11 +1,9 @@
 <div>
   <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
     <li>
-<<<<<<< Updated upstream
-      <a href="index" class="logo" style="padding:0px"><img src="resources/img/Head.png" style="width:150px;height:95px"></a>
-=======
-      <a href="/" class="logo" style="padding:0px"><img src="resources/img/Head.png" style="width:150px;height:95px"></a>
->>>>>>> Stashed changes
+
+      <a href="/" class="logo" style="padding:0px"><img src="resources/img/Head.png" style="width:150px;height:89px"></a>
+
     </li>
     <!-- Right-sided navbar links -->
     <li class="w3-dropdown-hover w3-right w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> 服務專區</a>
@@ -34,7 +32,7 @@
                 <a href="productList?B=Other">其他品牌</a>
             </div>
     </li>
-      <li class="w3-right w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><a href="#about"><i class="fa fa-search"></i> 搜尋</a></li>
+      <li class="w3-right w3-hide-small" onclick="document.getElementById('id01').style.display='block'"><a href="#search"><i class="fa fa-search"></i> 搜尋</a></li>
       <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-8">
       <header class="w3-container w3-teal">
