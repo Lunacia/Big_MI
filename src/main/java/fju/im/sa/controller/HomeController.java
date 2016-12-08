@@ -18,8 +18,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 	
-	
-	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
